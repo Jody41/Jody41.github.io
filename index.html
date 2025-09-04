@@ -23,7 +23,45 @@ hatha
 background-color: purple;}
 
  </style>
-<a href="pagina2.html">
-    klik hier voor pagina 2 
+<a href="pagina2.html" class="custom-link">
+  klik hier voor pagina 2
 </a>
+
+<style>
+  .custom-link {
+    font-family: Arial, sans-serif;   /* change font */
+    font-size: 20px;                 /* change text size */
+    color: blue;                     /* text color */
+    text-decoration: none;           /* removes underline */
+  }
+
+  .custom-link:hover {
+    color: red;                      /* color on hover */
+    text-decoration: underline;      /* underline only when hovered */
+  }
+</style>
+🔎 What each part does
+font-family → sets the font (you can use "Times New Roman", "Courier New", or even Google Fonts).
+
+font-size → changes how big the text is.
+
+color → changes the text color.
+
+text-decoration: none; → removes the underline.
+
+The .custom-link:hover { … } part makes it react when you hover your mouse.
+
+👉 Without CSS, links are always blue + underlined, but with CSS you can make them look however you want.
+
+Do you want me to also show you how to make it look like a button instead of plain text?
+
+
+
+
+
+
+
+
+Vragen aan ChatGPT
+
 </html>
