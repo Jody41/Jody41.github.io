@@ -9,7 +9,7 @@ font-size: 30px;
 text-align: center;
 }
 canvas { 
-align-content: center;
-width: 400; 
-height: 100;
-}
+margin-left: 100px; 
+width: 500px;
+height: 100px;
+} 
