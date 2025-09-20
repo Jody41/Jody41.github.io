@@ -16,8 +16,8 @@ ul {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    padding: 0 50px;
-    margin: 0;
+    padding: 0px 50px;
+    margin: 0px;
     overflow: hidden;
     background-color: #111111;
 border-radius: 15px;
