@@ -17,7 +17,7 @@ ul {
     margin: 0;
     overflow: hidden;
     background-color: #333;
-border-radius: 8px;
+border-radius: 15px;
 }
 li { float: left;}
 li a {
