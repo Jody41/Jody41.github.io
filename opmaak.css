@@ -12,6 +12,9 @@ font-size: 30px;
 text-align: center;
 }
 ul { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     padding: 0 20px;
     margin: 0;
@@ -19,7 +22,7 @@ ul {
     background-color: #111111;
 border-radius: 15px;
 }
-li { float: left;}
+li { float: none;}
 li a {
  display: block;
 color: white;
