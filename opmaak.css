@@ -31,7 +31,7 @@ padding: 28px;
 text-decoration: none;
 transition: background-color 0.3s;
 }
-li a:hover { background-color:#1a1a1a;}
+li a:hover { background-color:#333333;}
 li a.active {background-color: grey;}
 
 
