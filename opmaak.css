@@ -32,7 +32,7 @@ text-decoration: none;
 transition: background-color 0.3s;
 }
 li a:hover { background-color:#333333;}
-li a.active {background-color: grey;}
+li a.active {background-color: #666666;}
 
 
 
