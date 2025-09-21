@@ -6,12 +6,12 @@ margin: 0;
 
 }
 
-h3 {
+h1 {
 font-family: 'Times New Roman', Times, serif;
 font-size: 30px;
 text-align: center;
 }
-
+p { text-align: center;}
 
 /* Dit is de code voor de lijst (begin) */
 ul { 
@@ -37,6 +37,7 @@ transition: background-color 0.3s;
 li a:hover { background-color:#333333;}
 li a.active {background-color: #666666;}
 /* Dit is de code voor de lijst (eind) */
+
 
 .kaart {
   background: #fff; /* Witte achtergrondkleur voor de kaart */
