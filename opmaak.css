@@ -79,12 +79,12 @@ a.knop:hover {
     background-image: url(images/WieBenik.jpeg);
    }
 
-.card {
+.kaart {
   position: relative;
   color: white;
 }
 
-.card::before {
+.kaart::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -92,7 +92,7 @@ a.knop:hover {
   border-radius: 10px;
 }
 
-.card * {
+.kaart * {
   position: relative; /* zodat tekst boven de overlay komt */
 }
 
