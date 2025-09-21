@@ -11,6 +11,9 @@ font-family: 'Times New Roman', Times, serif;
 font-size: 30px;
 text-align: center;
 }
+
+
+/* Dit is de code voor de lijst (begin) */
 ul { 
     display: flex;
     justify-content: center;
@@ -33,6 +36,7 @@ transition: background-color 0.3s;
 }
 li a:hover { background-color:#333333;}
 li a.active {background-color: #666666;}
+/* Dit is de code voor de lijst (eind) */
 
 .kaart {
   background: #fff; /* Witte achtergrondkleur voor de kaart */
@@ -47,6 +51,7 @@ li a.active {background-color: #666666;}
 
   text-align: center; /* Tekst en inhoud in het midden uitlijnen */
 }
+
 
 
 
