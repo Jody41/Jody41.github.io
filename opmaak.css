@@ -34,9 +34,19 @@ transition: background-color 0.3s;
 li a:hover { background-color:#333333;}
 li a.active {background-color: #666666;}
 
-img { align-items: center;}
-h1 {text-align: center;}
+.kaart {
+  background: #fff; /* Witte achtergrondkleur voor de kaart */
+  border-radius: 10px; /* Hoeken van de kaart worden afgerond (10px radius) */
+  padding: 20px; /* Ruimte binnenin de kaart (tussen tekst en rand) */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  /* Schaduw onder de kaart voor een 3D-effect:
+     - 0 = horizontale verschuiving
+     - 4px = verticale verschuiving
+     - 6px = blur (hoe wazig de schaduw is)
+     - rgba(0,0,0,0.1) = kleur van de schaduw (zwart met 10% transparantie) */
 
+  text-align: center; /* Tekst en inhoud in het midden uitlijnen */
+}
 
 
 
