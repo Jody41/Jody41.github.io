@@ -72,6 +72,9 @@ li a.active {background-color: #666666;}
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   text-align: center;
+  background-size: cover; /* Zorgt dat het plaatje de hele kaart bedekt */
+  background-position: center; /* Plaatje mooi in het midden */
+  background-repeat: no-repeat; /* Voorkomt dat het plaatje zich herhaalt */
 }
 
 /* Knoppen */
@@ -91,9 +94,8 @@ a.knop:hover {
 }
 
 .kaart2 {
-    background-image: url(<img src="https://tse3.mm.bing.net/th/id/OIP.lZugetawlBAx3-C3IMBRjAHaGm?pid=Api" alt="Commons Sense | Who am I?"/>);
-}
-
+    background-image: url(images/WieBenik.jpeg);
+   }
 
 
 
