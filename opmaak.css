@@ -78,6 +78,18 @@ a.knop:hover {
 .kaart2 {
     background-image: url(images/WieBenik.jpeg);
    }
+.kaart3 {
+    background-image: url(images/het-binaire-getalsysteem.avif);
+}
+
+.kaart4 { 
+    background-image: url(images/kleurmodel.jpg);
+}
+
+.kaartg { 
+    background-image: url(images/File-Compression-1024x567.webp);
+}
+
 
 .kaart {
   position: relative;
