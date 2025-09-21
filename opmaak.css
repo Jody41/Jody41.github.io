@@ -38,25 +38,6 @@ li a:hover { background-color:#333333;}
 li a.active {background-color: #666666;}
 /* Dit is de code voor de lijst (eind) */
 
-
-.kaart {
-  background-color: aquamarine;
-  border-radius: 10px; /* Hoeken van de kaart worden afgerond (10px radius) */
-  padding: 20px; /* Ruimte binnenin de kaart (tussen tekst en rand) */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-  /* Schaduw onder de kaart voor een 3D-effect:
-     - 0 = horizontale verschuiving
-     - 4px = verticale verschuiving
-     - 6px = blur (hoe wazig de schaduw is)
-     - rgba(0,0,0,0.1) = kleur van de schaduw (zwart met 10% transparantie) */
-
-  text-align: center; /* Tekst en inhoud in het midden uitlijnen */
-}
-
-
-
-
-
 /* Container voor kaarten */
 .kaarten {
   display: grid;
@@ -75,18 +56,19 @@ li a.active {background-color: #666666;}
   background-size: cover; /* Zorgt dat het plaatje de hele kaart bedekt */
   background-position: center; /* Plaatje mooi in het midden */
   background-repeat: no-repeat; /* Voorkomt dat het plaatje zich herhaalt */
+  color: white;
 }
 
 /* Knoppen */
 a.knop {
-  display: inline-block;
+  display: inline-block;   /* zodat je op de hele blokje kan klikken*/
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #111;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 5px;   /* afgeronde zijdes */
+  transition: background-color 0.3s; /* zodat de hover kleur smooth komt inplaats van meteen */
 }
 
 a.knop:hover {
@@ -97,7 +79,12 @@ a.knop:hover {
     background-image: url(images/WieBenik.jpeg);
    }
 
-
+.card {
+     position: relative; color: white; } 
+.card::before {
+     content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); /* donker laagje */
+      border-radius: 10px; } 
+.card * { position: relative; /* zodat tekst boven de overlay komt */ }
 
 
 
