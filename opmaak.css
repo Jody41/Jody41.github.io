@@ -11,7 +11,12 @@ font-family: 'Times New Roman', Times, serif;
 font-size: 30px;
 text-align: center;
 }
-p { text-align: center;}
+.centerblock-textleft {  
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+
 
 /* Dit is de code voor de lijst (begin) */
 ul { 
