@@ -115,4 +115,5 @@ a.knop:hover {
   position: relative; /* zodat tekst boven de overlay komt */
 }
 
-.rechtsfoto { float: right; width: 20%; margin-top: 0 0 10px 10px; }
+.rechtsfoto { float: right; width: 25%; margin-top: 0 0 10px 10px; }
+.linksfotoCR7 {float: left; width: 25%; margin: auto; }
