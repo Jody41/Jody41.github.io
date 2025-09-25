@@ -117,4 +117,4 @@ a.knop:hover {
 }
 
 .rechtsfoto { float: right; width: 25%; margin-top: 0 0 10px 10px; } 
-.linksfotoCR7 {float: left; width: 23%; margin-right: 2px; }  /* zorgt ervoor dat de plaatje de linkerste 25% inneemt met 2px ruimte rechts*/
+.linksfotoCR7 {float: left; width: 20%; margin-right: 2px; }  /* zorgt ervoor dat de plaatje de linkerste 25% inneemt met 2px ruimte rechts*/
