@@ -120,5 +120,6 @@ a.knop:hover {
 }
 
 .rechtsfoto { float: right; width: 25%; margin-top: 0 0 10px 10px; } /* zorgt ervoor dat de plaatje de rechterste 25% inneemt met 10px ruimte links en onder*/
-.linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 20% inneemt met 2px ruimte rechts*/
-.wiebenik { margin-top: 50px;}
+.linksfotoCR7 {float: left; width: 25%; margin-right: 0; height: 731px; }  /* zorgt ervoor dat de plaatje de linkerste 20% inneemt met 2px ruimte rechts*/
+.wiebenik { margin-top: 150px;}
+
