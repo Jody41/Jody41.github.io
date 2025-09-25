@@ -119,7 +119,7 @@ a.knop:hover {
   position: relative; /* zodat tekst boven de overlay komt */
 }
 
-.rechtsfoto { float: right; width: 25%; margin-top: 0 0 10px 10px; height: 790px; } /* zorgt ervoor dat de plaatje de rechterste 25% inneemt met 10px ruimte links en onder*/
+.rechtsfoto { float: right; width: 21%; margin-top: 0 0 10px 10px; height: 790px; } /* zorgt ervoor dat de plaatje de rechterste 25% inneemt met 10px ruimte links en onder*/
 .linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 20% inneemt met 2px ruimte rechts*/
 .wiebenik { margin-top: 150px;}
 
