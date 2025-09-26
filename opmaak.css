@@ -124,9 +124,18 @@ a.knop:hover {
 .linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 20% inneemt met 2px ruimte rechts*/
 .wiebenikTEKST { margin-top: 90px;}
 
-.wiebenik {  background-image: url(/images/achtergrond.png); /* pad naar je plaatje */
+.wiebenik {  
+  background-image: url(/images/achtergrond.png); /* pad naar je plaatje */
   background-size: cover;       /* zorgt dat de foto het hele scherm vult */
   background-repeat: no-repeat; /* voorkomt dat de foto herhaald wordt */
   background-attachment: fixed; /* blijft staan als je scrolt */
   background-position: center;  /* mooi gecentreerd */
+}
+
+.index.html {  
+  background-image: url(images/achtergrondhome.jpg); 
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-position: center;  
 }
