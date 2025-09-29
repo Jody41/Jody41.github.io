@@ -149,6 +149,7 @@ a.knop:hover {
   object-fit: cover;   /* zorgt dat de afbeelding bijgesneden wordt ipv uitgerekt */     
   border-radius: 10px;   
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: 43px;
  }
  .centerblock-textleftV2 {  
   width: 63%;
