@@ -144,7 +144,7 @@ a.knop:hover {
 {
   display: block;        /* zodat de afbeelding netjes onder elkaar valt */
   margin: 20px auto;     /* auto = horizontaal centreren */
-  width: 50%;            
+  width: 63%;            
   height: 140px;     
   object-fit: cover;   /* zorgt dat de afbeelding bijgesneden wordt ipv uitgerekt */     
   border-radius: 10px;   
