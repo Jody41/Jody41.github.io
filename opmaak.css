@@ -21,7 +21,6 @@ text-align: center;
   margin-bottom: 67px;
 }
 
-
 /* Dit is de code voor de lijst (begin) */
 ul { 
     display: flex;
@@ -34,9 +33,8 @@ ul {
     background-color: #111111;
     position: sticky;
     top: 0; 
-    
-
 }
+
 li { float: none;}
 li a {
  display: block;
@@ -133,7 +131,7 @@ a.knop:hover {
 }
 
 .index-html {  
-  background-image: url(images/achtergrondhome.jpg); 
+  background-image: url(images/achtergrondhome.jpeg); 
   background-size: cover;       
   background-repeat: no-repeat; 
   background-attachment: fixed; 
