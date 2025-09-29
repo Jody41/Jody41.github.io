@@ -78,7 +78,7 @@ a.knop {
   padding: 10px 20px;
   background-color: #111;
   color: white;
-  text-decoration: none;
+  text-decoration: none; /* onderstreping gaat weg*/
   border-radius: 5px;   /* afgeronde zijdes */
   transition: background-color 0.3s; /* zodat de hover kleur smooth komt inplaats van meteen */
 }
@@ -120,8 +120,8 @@ a.knop:hover {
   position: relative; /* zodat tekst boven de overlay komt */
 }
 
-.rechtsfoto { float: right; width: 21%; margin-top: 0 0 10px 10px; height: 790px; } /* zorgt ervoor dat de plaatje de rechterste 25% inneemt met 10px ruimte links en onder*/
-.linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 20% inneemt met 2px ruimte rechts*/
+.rechtsfoto { float: right; width: 21%; margin-top: 0 0 10px 10px; height: 790px; } /* zorgt ervoor dat de plaatje de rechterste 21% inneemt met 10px ruimte links en onder*/
+.linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 25% inneemt met 0px margin rechts ervan*/
 .wiebenikTEKST { margin-top: 90px;}
 
 .wiebenik {  
