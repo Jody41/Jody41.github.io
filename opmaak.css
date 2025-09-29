@@ -140,3 +140,12 @@ a.knop:hover {
   background-position: center;  
 }
 
+.banner01 img /* img zodat het de plaatje binnen de div banner01 zoekt inplaats van hele container aanpassen*/
+{
+  display: block;        /* zodat de afbeelding netjes onder elkaar valt */
+  margin: 20px auto;     /* auto = horizontaal centreren */
+  width: 50%;            /* neemt de helft van de pagina in */
+  height: auto;          /* verhouding blijft goed */
+  border-radius: 10px;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+ }
