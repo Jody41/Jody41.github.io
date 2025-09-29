@@ -149,3 +149,10 @@ a.knop:hover {
   border-radius: 10px;   
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
  }
+ .centerblock-textleftV2 {  
+  width: 63%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 67px;
+}
+  }
