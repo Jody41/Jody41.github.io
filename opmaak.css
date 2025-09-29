@@ -158,9 +158,10 @@ a.knop:hover {
 }
 
 .middenlinks {/* dit is zodat ik de h1 en h2 in de linkerste deel van de middelste 60% kan stoppen*/ 
-   width: 60%;        
+   width: 63%;        
   margin: 0 auto;   
-  text-align: left;  
-  font-size: 28px;   
+  text-align: left; 
+  margin-bottom: 35px; 
+  font-size: 38px;   
  }
   
