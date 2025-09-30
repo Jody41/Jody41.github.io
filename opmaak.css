@@ -33,6 +33,7 @@ ul {
     background-color: #111111;
     position: sticky;
     top: 0; 
+    z-index: 1000; /* lijst blijft boven alles*/
 }
 
 li { float: none;}
