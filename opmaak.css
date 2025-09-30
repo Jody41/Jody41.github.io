@@ -215,5 +215,14 @@ margin-top: 27px;  }
  display: block;
  margin-left: 0;
  margin-bottom: 30px;
+ }
+
+ .site-footer { 
+ background-color: #111;   
+  color: white;             
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
 
  }
