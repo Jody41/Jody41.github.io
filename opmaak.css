@@ -171,3 +171,12 @@ a.knop:hover {
   font-size: 38px; 
 margin-top: 27px;  }
 
+.table-container {
+  width: 63%;
+  margin: 0 auto;
+  text-align: left;
+ }
+
+ .table-container table {
+  margin-left: 0  ; /* zet de tabel helemaal links in dat middenblok */
+  }
