@@ -208,5 +208,12 @@ margin-top: 27px;  }
   float: left;         /* plaatje links in het middenblok */
   margin-right: 15px;  /* ruimte tussen plaatje en tekst */
   display: block;
+ }
+
+ .LossyvsLossless {
+  width: 600px;
+ display: block;
+ margin-left: 0;
+ margin-bottom: 30px;
 
  }
