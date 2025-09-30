@@ -186,4 +186,18 @@ margin-top: 27px;  }
   iframe { 
   display: block;
    margin: 0 auto;
-  margin-bottom: 30px;}
+  margin-bottom: 30px;
+}
+
+.KMPcontainer { 
+ width: 63%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.kleurmodellenPlaatjes {
+ width: 200px;
+ display: block;
+ margin-left: 0;
+ }
