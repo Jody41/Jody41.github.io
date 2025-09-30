@@ -1,133 +1,143 @@
+/* === algemene body en tekst styling === */
 body {
-
-background-color: #faf0e6;
-padding: 0;
-margin: 0;
-
+  background-color: #faf0e6; /* achtergrondkleur van de pagina */
+  padding: 0;               /* verwijdert standaard padding van de browser */
+  margin: 0;                /* verwijdert standaard marge van de browser */
 }
-p{ text-align: center;
-font-size: 18px;}
+
+p { 
+  text-align: center; /* paragrafen gecentreerd */
+  font-size: 18px;    /* tekstgrootte iets groter */
+}
 
 h1 {
-font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-text-align: center;
-
+  font-family: 'Times New Roman', Times, serif; /* klassiek lettertype */
+  font-size: 30px;                             /* grootte van h1 */
+  text-align: center;                           /* gecentreerd */
 }
+
+/* === middenblok tekst styling === */
 .centerblock-textleft {  
-  width: 50%;
-  margin: 0 auto;
+  width: 50%;           /* breedte van het middenblok */
+  margin: 0 auto;       /* horizontaal centreren */
+  text-align: left;     /* tekst links uitlijnen */
+  margin-bottom: 67px;  /* ruimte onder het blok */
+}
+
+.centerblock-textleftV2 {  
+  width: 63%;           /* iets breder middenblok */
+  margin: 0 auto;       
   text-align: left;
   margin-bottom: 67px;
 }
 
-/* Dit is de code voor de lijst (begin) */
+/* === navigatielijst styling === */
 ul { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+    display: flex;               /* flexbox voor horizontale lijst */
+    justify-content: center;     /* centraal uitlijnen */
+    align-items: center;         /* verticaal centreren */
+    list-style-type: none;       /* geen standaard bolletjes */
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #111111;
-    position: sticky;
+    background-color: #111111;   /* donkere achtergrond */
+    position: sticky;            /* blijft bovenaan bij scrollen */
     top: 0; 
-    z-index: 1000; /* lijst blijft boven alles*/
+    z-index: 1000;               /* lijst blijft boven alles */
 }
 
-li { float: none;}
+li { float: none; }
+
 li a {
  display: block;
-color: white;
-text-align: center;
-padding: 28px;
-text-decoration: none;
-transition: background-color 0.3s;
+ color: white;
+ text-align: center;
+ padding: 28px;
+ text-decoration: none;           /* geen onderstreping */
+ transition: background-color 0.3s; /* smooth hover effect */
 }
-li a:hover { background-color:#333333;}
-li a.active {background-color: #666666;}
-/* Dit is de code voor de lijst (eind) */
 
-/* Container voor kaarten */
+li a:hover { background-color:#333333; } /* hover kleur */
+li a.active {background-color: #666666;} /* actieve pagina kleur */
+
+/* === kaarten container en styling === */
 .kaarten {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: grid;                            /* grid layout voor kaarten */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsief */
+  gap: 20px;                                /* ruimte tussen kaarten */
   padding: 40px;
 }
 
-/* Kaarten zelf */
 .kaart {
-  background: #fff;
-  border-radius: 10px;
+  background: #fff;                          /* achtergrond van kaart */
+  border-radius: 10px;                       /* ronde hoeken */
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  text-align: center;
-  background-size: cover; /* Zorgt dat het plaatje de hele kaart bedekt */
-  background-position: center; /* Plaatje mooi in het midden */
-  background-repeat: no-repeat; /* Voorkomt dat het plaatje zich herhaalt */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);    /* schaduw */
+  text-align: center;                        /* tekst in het midden */
+  background-size: cover;                    /* afbeelding dekt hele kaart */
+  background-position: center;               /* centraal uitgelijnd */
+  background-repeat: no-repeat;              /* geen herhaling van afbeelding */
   color: white;
-}
-
-/* Knoppen */
-a.knop {
-  display: inline-block;   /* zodat je op de hele blokje kan klikken*/
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #111;
-  color: white;
-  text-decoration: none; /* onderstreping gaat weg*/
-  border-radius: 5px;   /* afgeronde zijdes */
-  transition: background-color 0.3s; /* zodat de hover kleur smooth komt inplaats van meteen */
-}
-
-a.knop:hover {
-  background-color: #333;
-}
-
-.kaart2 {
-    background-image: url(images/WieBenik.jpeg);
-   }
-.kaart3 {
-    background-image: url(images/het-binaire-getalsysteem.avif);
-}
-
-.kaart4 { 
-    background-image: url(images/kleurmodel.jpg);
-}
-
-.kaart5 { 
-    background-image: url(images/File-Compression-1024x567.webp);
-}
-.kaart6 {background-image: url(images/Invoerverwerkinguitvoer.webp); }
-
-.kaart {
-  position: relative;
-  color: white;
+  position: relative;                        /* nodig voor overlay */
 }
 
 .kaart::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.4); /* donker laagje */
+  background: rgba(0,0,0,0.4); /* donker overlay laagje voor tekst leesbaar */
   border-radius: 10px;
 }
 
 .kaart * {
-  position: relative; /* zodat tekst boven de overlay komt */
+  position: relative; /* zorgt dat tekst boven overlay komt */
 }
 
-.rechtsfoto { float: right; width: 21%; margin-top: 0 0 10px 10px; height: 790px; } /* zorgt ervoor dat de plaatje de rechterste 21% inneemt met 10px ruimte links en onder*/
-.linksfotoCR7 {float: left; width: 25%; margin-right: 0; }  /* zorgt ervoor dat de plaatje de linkerste 25% inneemt met 0px margin rechts ervan*/
-.wiebenikTEKST { margin-top: 90px;}
+/* === knoppen styling === */
+a.knop {
+  display: inline-block; /* klikbaar over hele blok */
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #111;
+  color: white;
+  text-decoration: none; /* geen onderstreping */
+  border-radius: 5px;    /* afgeronde hoeken */
+  transition: background-color 0.3s; /* smooth hover effect */
+}
 
+a.knop:hover {
+  background-color: #333; /* hover kleur */
+}
+
+/* === kaarten achtergrond afbeeldingen === */
+.kaart2 { background-image: url(images/WieBenik.jpeg); }
+.kaart3 { background-image: url(images/het-binaire-getalsysteem.avif); }
+.kaart4 { background-image: url(images/kleurmodel.jpg); }
+.kaart5 { background-image: url(images/File-Compression-1024x567.webp); }
+.kaart6 { background-image: url(images/Invoerverwerkinguitvoer.webp); }
+
+/* === afbeeldingen links en rechts === */
+.rechtsfoto { 
+  float: right; 
+  width: 21%; 
+  margin-top: 0; 
+  margin-left: 10px; 
+  margin-bottom: 10px; 
+  height: 790px; /* afbeelding rechter 21% met marge */
+}
+
+.linksfotoCR7 {
+  float: left; 
+  width: 25%; 
+  margin-right: 0;
+}
+
+/* === pagina achtergrond afbeeldingen === */
 .wiebenik {  
-  background-image: url(/images/achtergrond.png); /* pad naar je plaatje */
-  background-size: cover;       /* zorgt dat de foto het hele scherm vult */
-  background-repeat: no-repeat; /* voorkomt dat de foto herhaald wordt */
-  background-attachment: fixed; /* blijft staan als je scrolt */
+  background-image: url(/images/achtergrond.png);
+  background-size: cover;       /* foto vult hele scherm */
+  background-repeat: no-repeat; /* voorkomt herhaling */
+  background-attachment: fixed; /* blijft staan bij scroll */
   background-position: center;  /* mooi gecentreerd */
 }
 
@@ -139,91 +149,90 @@ a.knop:hover {
   background-position: center;  
 }
 
-.banner01 img /* img zodat het de plaatje binnen de div banner01 zoekt inplaats van hele container aanpassen*/
-{
-  display: block;        /* zodat de afbeelding netjes onder elkaar valt */
-  margin: 20px auto;     /* auto = horizontaal centreren */
+/* === banner afbeelding bovenaan === */
+.banner01 img {
+  display: block;        /* afbeelding netjes onder elkaar */
+  margin: 20px auto;     /* horizontaal centreren */
   width: 63%;            
   height: 140px;     
-  object-fit: cover;   /* zorgt dat de afbeelding bijgesneden wordt ipv uitgerekt */     
+  object-fit: cover;     /* knipt afbeelding in plaats van uitrekken */
   border-radius: 10px;   
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   margin-top: 43px;
- }
- .centerblock-textleftV2 {  
-  width: 63%;
-  margin: 0 auto;
-  text-align: left;
-  margin-bottom: 67px;
 }
 
-.middenlinks {/* dit is zodat ik de h1 en h2 in de linkerste deel van de middelste 60% kan stoppen*/ 
-   width: 63%;        
+/* === tekst middenblok breedte 63% === */
+.middenlinks { 
+  width: 63%;        
   margin: 0 auto;   
   text-align: left; 
   margin-bottom: 23px; 
   font-size: 28px;   
- }
-  
- .middenlinksBINAIR {  width: 63%;        
+}
+
+.middenlinksBINAIR {  
+  width: 63%;        
   margin: 0 auto;   
   text-align: left; 
   margin-bottom: 23px; 
   font-size: 38px; 
-margin-top: 27px;  }
+  margin-top: 27px;  
+}
 
+/* === tabellen container === */
 .table-container {
- width: 63%;
+  width: 63%;
   margin: 0 auto;
   text-align: left;
   margin-bottom: 30px;
- }
+}
 
- .table-container table {
-  margin-left: 0  ; /* zet de tabel helemaal links in dat middenblok */
-  }
+.table-container table {
+  margin-left: 0; /* zet tabel helemaal links in het middenblok */
+}
 
-  iframe { 
+/* === spelletje bonanza styling === */
+iframe { 
   display: block;
-   margin: 0 auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
+/* === kleurmodellen container & plaatjes === */
 .KMPcontainer { 
- width: 63%;
+  width: 63%;
   margin: 0 auto;
   text-align: left;
 }
-
 
 .kleurmodellenPlaatjes {
- width: 483px;
- display: block;
- margin-left: 0;
- margin-bottom: 30px;
- }
+  width: 483px;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
 
- .KMyoutubeplaatje { 
-   width: 200px;        /* breedte van het plaatje, past niet het hele blok */
-  float: left;         /* plaatje links in het middenblok */
+.KMyoutubeplaatje { 
+  width: 200px;        /* breedte plaatje */
+  float: left;         /* links in het middenblok */
   margin-right: 15px;  /* ruimte tussen plaatje en tekst */
   display: block;
   margin-bottom: 80px;
- }
+}
 
- .LossyvsLossless {
+.LossyvsLossless {
   width: 600px;
- display: block;
- margin-left: 0;
- margin-bottom: 30px;
- }
+  display: block;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
 
- .site-footer { 
- background-color: #000000;   
+/* === footer styling === */
+.site-footer { 
+  background-color: #000000; /* zwarte achtergrond */
   color: white;             
   text-align: center;
   padding: 14px;
   margin-top: 40px;
   font-size: 14px;
-
- }
+}
