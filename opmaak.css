@@ -203,4 +203,10 @@ margin-top: 27px;  }
  margin-bottom: 30px;
  }
 
- 
+ .KMyoutubeplaatje { 
+   width: 200px;        /* breedte van het plaatje, past niet het hele blok */
+  float: left;         /* plaatje links in het middenblok */
+  margin-right: 15px;  /* ruimte tussen plaatje en tekst */
+  display: block;
+
+ }
