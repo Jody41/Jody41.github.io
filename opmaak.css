@@ -173,7 +173,7 @@ a.knop:hover {
 margin-top: 27px;  }
 
 .table-container {
-  width: 63%;
+   width: 63%;
   margin: 0 auto;
   text-align: left;
   margin-bottom: 30px;
@@ -183,6 +183,6 @@ margin-top: 27px;  }
   margin-left: 0  ; /* zet de tabel helemaal links in dat middenblok */
   }
 
-  .iframe { 
+  iframe { 
     display: block;
     margin: 0 auto;}
